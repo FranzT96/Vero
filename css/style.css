@@ -3,7 +3,8 @@
     --bg-color: #ffffff;
     --text-main: #222222; /* Grigio antracite per eleganza */
     --text-light: #666666;
-    --accent: #111111;
+    --accent: #00AEEF; /* L'Azzurro esatto del logo VERO */
+    --accent-dark: #008ebf; /* Un azzurro leggermente più scuro per l'effetto hover */
     --section-bg: #f9f9f9;
 }
 
@@ -41,7 +42,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 15px 5%;
     background-color: var(--bg-color);
     position: sticky;
     top: 0;
@@ -49,12 +50,37 @@ a {
     border-bottom: 1px solid #eaeaea;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 2px;
+/* STILE DEL LOGO TESTUALE */
+.brand-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    line-height: 1; /* Avvicina le due righe */
 }
 
+.brand-vero {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900; /* Grassetto massimo per richiamare il logo originale */
+    color: var(--text-main);
+    letter-spacing: 1px;
+}
+
+.brand-v {
+    color: var(--accent); /* La V prende l'azzurro definito nelle variabili */
+    font-size: 2.8rem; /* Rende la V leggermente più grande del resto */
+}
+
+.brand-sub {
+    font-family: 'Dancing Script', cursive; /* Font corsivo elegante */
+    font-size: 1.4rem;
+    color: var(--text-main);
+    margin-top: -5px; /* Tira la scritta verso l'alto per avvicinarla a VERO */
+    letter-spacing: 1px;
+}
+
+/* MENU E BOTTONI */
 .nav-links {
     list-style: none;
     display: flex;
@@ -70,18 +96,20 @@ a {
 }
 
 .nav-links a:hover {
-    color: #999;
+    color: var(--accent); /* Al passaggio del mouse la scritta diventa azzurra */
 }
 
 .btn-contact {
     border: 1px solid var(--text-main);
     padding: 8px 16px;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .btn-contact:hover {
-    background-color: var(--text-main);
-    color: var(--bg-color) !important;
+    background-color: var(--accent); /* Il bottone contatti diventa azzurro */
+    border-color: var(--accent);
+    color: white !important;
 }
 
 /* 2. HERO SECTION */
@@ -111,7 +139,7 @@ a {
 }
 
 .btn-primary {
-    background-color: var(--accent);
+    background-color: var(--accent); /* Ora il bottone usa l'azzurro del logo */
     color: white;
     padding: 15px 30px;
     font-size: 1rem;
@@ -121,7 +149,7 @@ a {
 }
 
 .btn-primary:hover {
-    background-color: #444;
+    background-color: var(--accent-dark);
 }
 
 /* 3. DIVISIONI (GRID) */
@@ -166,7 +194,7 @@ a {
 
 /* 4. FOOTER / CONTATTI */
 .footer {
-    background-color: var(--accent);
+    background-color: var(--text-main); /* Scuro elegante in tinta con il brand */
     color: white;
     text-align: center;
     padding: 80px 20px;

@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vero Serigrafia | Eccellenza su Misura</title>
+    <!-- Importo i font Google: Montserrat (per testi) e Dancing Script (per la scritta elegante) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+    <!-- Collego il file CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- BARRA DI NAVIGAZIONE -->
     <nav class="navbar">
-        <div class="logo">VERO.</div>
+        <!-- Nuovo Logo Testuale -->
+        <a href="#" class="brand-logo">
+            <div class="brand-vero"><span class="brand-v">V</span>ERO</div>
+            <div class="brand-sub">nonsolosport</div>
+        </a>
         <ul class="nav-links">
             <li><a href="#sport">Sportwear</a></li>
             <li><a href="#corporate">Corporate</a></li>
@@ -21,6 +28,7 @@
         </ul>
     </nav>
 
+    <!-- PRIMA SCHERMATA (HERO) -->
     <header class="hero">
         <div class="hero-content">
             <h1>La Qualità che Veste l'Eccellenza</h1>
@@ -29,6 +37,7 @@
         </div>
     </header>
 
+    <!-- SEZIONE DIVISIONI -->
     <section id="divisioni" class="divisions">
         <div class="section-title">
             <h2>Le Nostre Aree di Competenza</h2>
@@ -36,16 +45,19 @@
         </div>
         
         <div class="grid-divisions">
+            <!-- Card Sport -->
             <div class="card" id="sport">
                 <h3>Sportwear</h3>
                 <p>Forniture tecniche e di rappresentanza per il grande sport, dal basket alla pallavolo. Il nostro core business.</p>
             </div>
             
+            <!-- Card Corporate -->
             <div class="card" id="corporate">
                 <h3>Corporate</h3>
                 <p>Abbigliamento aziendale progettato su misura per trasmettere l'identità del tuo brand.</p>
             </div>
             
+            <!-- Card Interior -->
             <div class="card" id="interior">
                 <h3>Interior Design</h3>
                 <p>Personalizzazione di tessuti e arredi per spazi unici, eleganti e ricercati.</p>
@@ -53,6 +65,7 @@
         </div>
     </section>
 
+    <!-- FOOTER / CONTATTI STATICI -->
     <footer id="contatti" class="footer">
         <h2>Lavoriamo al tuo prossimo progetto</h2>
         <p>Contattaci per una consulenza su misura.</p>
