@@ -3,14 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La mia prima pagina su Vercel</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        h1 { color: #0070f3; }
-    </style>
+    <title>Vero Serigrafia | Eccellenza su Misura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Ciao Mondo!</h1>
-    <p>Questa pagina è online grazie a Vercel e GitHub.</p>
+
+    <nav class="navbar">
+        <div class="logo">VERO.</div>
+        <ul class="nav-links">
+            <li><a href="#sport">Sportwear</a></li>
+            <li><a href="#corporate">Corporate</a></li>
+            <li><a href="#interior">Interior</a></li>
+            <li><a href="#contatti" class="btn-contact">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>La Qualità che Veste l'Eccellenza</h1>
+            <p>Soluzioni sartoriali per lo sport professionistico, il corporate e l'interior design.</p>
+            <a href="#divisioni" class="btn-primary">Esplora le divisioni</a>
+        </div>
+    </header>
+
+    <section id="divisioni" class="divisions">
+        <div class="section-title">
+            <h2>Le Nostre Aree di Competenza</h2>
+            <p>Dall'ideazione alla stampa, per i settori più esigenti.</p>
+        </div>
+        
+        <div class="grid-divisions">
+            <div class="card" id="sport">
+                <h3>Sportwear</h3>
+                <p>Forniture tecniche e di rappresentanza per il grande sport, dal basket alla pallavolo. Il nostro core business.</p>
+            </div>
+            
+            <div class="card" id="corporate">
+                <h3>Corporate</h3>
+                <p>Abbigliamento aziendale progettato su misura per trasmettere l'identità del tuo brand.</p>
+            </div>
+            
+            <div class="card" id="interior">
+                <h3>Interior Design</h3>
+                <p>Personalizzazione di tessuti e arredi per spazi unici, eleganti e ricercati.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatti" class="footer">
+        <h2>Lavoriamo al tuo prossimo progetto</h2>
+        <p>Contattaci per una consulenza su misura.</p>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@veroserigrafia.it</p>
+            <p><strong>Telefono:</strong> +39 0123 456789</p>
+            <p><strong>Sede:</strong> Via della Serigrafia 1, Maniago (PN)</p>
+        </div>
+    </footer>
+
 </body>
 </html>
